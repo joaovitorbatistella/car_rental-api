@@ -14,6 +14,7 @@ const routes = express.Router();
 
 routes.get('/cars/list', CarController.index);
 routes.post('/cars', CarController.create);
+routes.delete('/cars/:id', CarController.delete);
 routes.get('/brands/list', BrandController.index);
 routes.get('/models/list', ModelController.index);
 

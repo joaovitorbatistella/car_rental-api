@@ -49,6 +49,20 @@ module.exports = {
             created_at: new Date(),
             updated_at: new Date(),
           })
-      return response.json({ chassis });
-  }
+      return response.json({
+        success: true,
+        id: chassis
+      });
+  },
+  async delete(request, response){
+    const { id } = request.params;
+
+    // const car = await connection('car')
+    // .where('chassis', id)
+    // .first();
+
+    await connection('car').where('chassis', id).delete();
+
+    return response.status(204).send();
+}
 };
