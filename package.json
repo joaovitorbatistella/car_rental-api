@@ -1,0 +1,22 @@
+{
+  "name": "api-trabalho-final",
+  "version": "1.0.0",
+  "description": "API para Trabalho Final da Disciplina de Engenharia de Software I",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Vítor Batistella",
+  "license": "ISC",
+  "dependencies": {
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "knex": "^2.2.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
